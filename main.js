@@ -76,6 +76,14 @@
 
 //  alert (`che estas seguro?`)
 
+//esto de aca arriba ⬆ ⬆ ⬆  es para practicar lo de las clases jajaja
+
+
+                
+              //PRIMERA ENTREGA DE JS
+
+
+
 //EJERCICIO NUMERO 1
 
  function ParImpar(numero) {

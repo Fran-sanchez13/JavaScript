@@ -200,7 +200,177 @@ function multiplicadorArray(array, multiplicador){
 }
 
 const myArray2 = [1, 2, 3, 4, 5]
-const multiplicador = 2;
+const multiplicador = 3;
 multiplicadorArray(myArray2, multiplicador);
+                      //PARA PRACTICAR YO MISMO  ⬇
+        //ARRAY
+
+var mysArray = ['Nucba', 20, 'Mundo', 'francisco']
+//console.log(mysArray[2]);
+//console.log(mysArray[3]);
+
+let transportes = ['auto', 'moto', 'camion', 'barco']
+    console.log(transportes)// auto, moto, camion, barco
+    console.log(transportes[3]);// barco
+    console.log(transportes.length);// 4, todos los elementos q tiene dentro
 
 
+        
+                 //METODOS DE ARRAY
+
+// INDEX OF
+
+
+let animales = ["gato", "perro", "tortuga", "serpiente"]
+    console.log(animales);
+    
+   // console.log(animales.indexOf("perro"));
+    //console.log(animales.indexOf("tortuga"));
+
+        /*====TO STRING===== */
+ 
+    //console.log(animales.toString());
+
+//let masanimales = ["caballo", "iguana", "chancho"]
+
+         /*====CONCAT===== */
+
+    //console.log(animales.concat(masanimales));
+    
+         /*====PUSH===== */
+
+   animales.push("Rinoceronte");
+    console.log(animales);
+    
+         /*====POP===== */
+
+   /* let animalEliminado = animales.pop();
+    console.log(animales);
+    console.log(animalEliminado);*/
+    
+
+         /*====UNSHIFT===== */
+
+    /*let caballo = "caballo"
+    animales.unshift(caballo);
+    console.log(animales);*/
+
+
+         /*====SHIFT===== */
+
+   /* let animalEliminado = animales.shift();
+    console.log(animales);
+    console.log(animalEliminado);*/
+
+         /*====JOIN===== */
+
+    //console.log(animales.join(", "));
+
+         /*====REVERSE===== */
+
+    // console.log(animales.reverse());
+
+         /*====SLICE===== */
+
+    /*console.log(animales.slice(1,3));
+    console.log(animales.slice(2));
+    console.log(animales.slice(-2));
+    console.log(animales.slice(-3, -1));*/
+  
+         /*====METODOS AVANZADOS===== */
+
+        // FUNCIONES CALLBACK
+
+    function saludar(nombre){
+        //alert('hola ' + nombre)
+    }
+
+    function ProcesarEntradaUsuario(callback){
+        //var nombre = prompt('por favor ingresa tu nombre')
+
+        callback(nombre)
+    }
+
+    //ProcesarEntradaUsuario(saludar)
+
+      /*====METODO FOREACH===== */
+
+    const numero = [1, 2, 3];
+    // numero.forEach((numero) => {
+        //console.log(`hola, soy el numero ${numero}`);});
+
+
+    // const numeros = [4,5,6,7,8,9,10];
+    // numeros.forEach((valor, indice) => {
+        //console.log(`soy el numero ${valor} en el indice ${indice}`);})
+
+    const user = ['Francisco', 'Camila', 'Joaquin', 'Clara'];
+
+    // user.forEach( (user, indice) => {
+        //console.log(`El usuario ${indice}: ${user}`);} );
+
+    /*====METODO MAP===== */
+
+    // const duplicados = numeros.map((numeros) => {
+        // return numeros * 2;
+    // })
+
+    //console.log(numeros);
+    //console.log(duplicados);
+
+
+    // const suma = numero.map((numero) => {
+        // return numero + 20
+    // })
+    //console.log(suma);
+
+        /*====METODO FILTER===== */
+
+    const numeros = [4,5,6,7,8,9,10];
+    
+    const numerosPares = numeros.filter((numero) => {
+        return numero % 2 === 0;
+    });
+   // console.log(numeros);
+    //console.log(numerosPares);
+
+        /*====METODO FIND===== */
+
+    // aca ya habia sido definida la variable CONST y se uso solo log para hacer el motodoFIND
+    
+    //console.log(numeros.find((numero) => numero % 2 ===0));
+    
+        /*====METODO EVERY===== */
+
+    //console.log(numeros.every((numero) => numero < 10));
+    
+
+        /*====METODO SOME===== */
+
+        // console.log(numeros.some((numero) => numero < 10));
+        
+
+        /*====METODO SORT===== */
+    
+        const numerosDesordernados = [10,2,5,8,7,4,9,6,1,3]
+       // console.log(numerosDesordernados);
+        
+         //console.log( numerosDesordernados.sort( (a, b) => {return a - b}));
+        
+        //console.log(numerosDesordernados.sort((a, b) => { return b - a} ));
+                
+        /*====METODO REDUCE===== */
+            
+        /*const suma = numerosDesordernados.reduce( (acumulador, numero) => {
+            return acumulador + numero
+        }, 200)*/
+
+        //console.log(suma);
+        
+        /*const palabras = ['hola', 'mundo', '!']
+        const frase = palabras.reduce( (acc, val) => {
+            return acc + ' ' + val 
+        })*/ 
+
+        //console.log(frase);//reducimos las variables a un solo string
+        

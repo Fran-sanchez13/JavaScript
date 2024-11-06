@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login{
+    border: 2px solid white;
+    width: 400px;
+    height: 500px;
+    background-color: #0E1428;    
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;    
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+
+}
+
+h1{
+    font-weight: normal;
+    font-size: 24px;
+    text-shadow: 0, 0, 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label{
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+input{
+    background: rgba(0, 0, 0, 0);
+    height: 50px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: 2px solid white;
+    color: white;
+}
+
+button{
+    background: rgba(0, 0, 0, 0);
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 10px 0px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* ERROR AND SUCCESS */
+
+.forms_field.error input{
+    border: 1px solid red;
+}
+
+.forms_field small{
+    color: red;
+    max-width: 350px;
+    text-align: center;
+    display: none;
+}
+
+.forms_field.success input{
+    border: 1px solid green;
+}
+
+#form__error {
+    color: #dc3545;
+    font-size: 1rem;
+    margin: 8px 0px;
+    max-width: 350px;
+    text-align: center;
+  }
